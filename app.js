@@ -16,7 +16,6 @@ const displayProducts = (list) => {
     const productList = list
         .map((product) => {
             const {id} = product;
-            console.log(product);
             const {name: title, price} = product.fields;
             const {url: img} = product.fields.image[0];
             const formatPrice = price / 100;
